@@ -1,0 +1,566 @@
+@commoncolor:deepskyblue;
+.navbar-default {
+	padding: 20px 0px;
+	opacity: 0.9;
+	margin-bottom: 0px;
+	.container {
+		.navbar-header {
+			.navbar-brand {
+				padding: 0px;
+			}
+		}
+		.collapse {
+			.nav {
+				margin-right: -47px;
+				li {
+					a:hover {
+						color: @commoncolor;
+					}
+				}
+				.active {
+					a {
+						color: @commoncolor;
+						background: none;
+					}
+					:hover {
+						color: @commoncolor;
+						background: none;
+					}
+				}
+			}
+		}
+	}
+}
+#banner {
+	margin-top: 82px;
+	ul {
+		.item {
+			text-align: center;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+.grade {
+	padding: 50px 0px;
+	.container {
+		.row {
+			margin: auto;
+			.main-title {
+				text-align: center;
+				margin-bottom: 30px;
+				h2 {
+					small {
+						color: #919191;
+					}
+				}
+				.line-big {
+					margin: 30px auto 26px;
+					border-width: 2px;
+					width: 80px;
+					border-top: 2px solid @commoncolor;
+				}
+			}
+			.our-data-item {
+				text-align: center;
+				.number-wrapper {
+					font-size: 50px;
+					line-height: 1.5em;
+					color: @commoncolor;
+				}
+				.title {
+					color: #919191;
+				}
+			}
+		}
+	}
+}
+.advantage {
+	padding: 50px 0px;
+	background-color: #e1e1e1;
+	.row {
+		margin: auto;
+		.main-title {
+			text-align: center;
+			margin-bottom: 30px;
+			h2 {
+				small {
+					color: #919191;
+				}
+			}
+			.line-big {
+				margin: 30px auto 26px;
+				border-width: 2px;
+				width: 80px;
+				border-top: 2px solid @commoncolor;
+			}
+		}
+		.our-whyus-item {
+			text-align: center;
+			.number-wrapper {
+				font-size: 50px;
+				line-height: 1.5em;
+				color: @commoncolor;
+			}
+			.title {
+				color: #919191;
+			}
+			p {
+				line-height: 1.5em;
+			}
+			span {
+				font-size: 80px;
+				color: deepskyblue;
+				padding-top: 40px;
+			}
+		}
+		:hover .our-whyus-item {
+			background-color: deepskyblue;
+			color: #fff;
+			transition: 0.5s;
+		}
+		:hover span {
+			color: #fff;
+		}
+	}
+}
+.server {
+	padding: 50px 0px;
+	.row {
+		text-align: center;
+		margin: auto;
+		.main-title {
+			text-align: center;
+			margin-bottom: 30px;
+			h2 {
+				small {
+					color: #919191;
+				}
+			}
+			.line-title {
+				margin: 30px auto 26px;
+				border-width: 2px;
+				width: 80px;
+				border-top: 2px solid @commoncolor;
+			}
+		}
+		#server {
+			.card-item {
+				border: 1px solid #c1c1c1;
+				transition: all 0.5s;
+				.card-title {
+					padding: 20px 0px;
+					border-bottom: 1px solid #c1c1c1;
+					h4 {
+						color: #0ba1e4;
+						font-weight: bolder;
+					}
+				}
+				.card-content {
+					padding: 30px;
+
+					a {
+						color: #0ba1e4;
+						border: 1px solid #0ba1e4;
+						background-color: #fff;
+					}
+
+					p {
+						line-height: 3em;
+					}
+				}
+			}
+			.active1 {
+				background-color: #0ba1e4;
+				color: #fff;
+				transition: all 0.5s;
+				box-shadow: 1px 0px 4px 14px #0ba1e4;
+				border: 1px solid #0ba1e4;
+				z-index: 2;
+				.card-title {
+					h4 {
+						color: #fff;
+					}
+				}
+				.card-content {
+					a {
+						color: #fff;
+						border: 1px solid #fff;
+						background: #0ba1e4;
+						&:hover {
+							background: #fff;
+							color: #0ba1e4;
+						}
+					}
+				}
+			}
+		}
+		.text-center {
+			.btn-lg {
+				margin-top: 50px;
+				margin-bottom: 50px;
+				color: #0ba1e4;
+				background: transparent;
+				border-color: #0ba1e4;
+			}
+			:hover {
+				background-color: #0ba1e4;
+				color: #fff;
+				transition: 0.5s;
+			}
+		}
+	}
+}
+
+.canvas {
+	position: relative;
+	height: 257px;
+	.container {
+		top: 0;
+		position: relative;
+	}
+}
+
+// 侧边栏
+// 左
+.region-start {
+	position: fixed;
+	bottom: 2px;
+	left: 2px;
+	width: 240px;
+	height: auto;
+	background: #ededed;
+	border-radius: 6px;
+	z-index: 1111;
+	.tops {
+		height: 35px;
+		background: #00aef3;
+		border-radius: 6px 6px 0px 0px;
+		color: #fff;
+		p {
+			display: inline-block;
+			line-height: 35px;
+			text-indent: 1em;
+		}
+		#right {
+			display: inline-block;
+			float: right;
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+			line-height: 35px;
+			// font-weight: bolder;
+			cursor: pointer;
+		}
+	}
+	.bottom {
+		height: auto;
+		.d1 {
+			overflow: hidden;
+			height: 60px;
+			border-bottom: 1px solid #d5d5d5;
+			p {
+				text-indent: 1em;
+				line-height: 6px;
+			}
+			.p1 {
+				margin-top: 18px;
+				font-size: 14px;
+				color: #666;
+			}
+			.p2 {
+				font-size: 12px;
+				color: #999;
+			}
+		}
+		.d2 {
+			form {
+				textarea {
+					margin: 12px 0px 0px 10px;
+					width: 221px;
+					height: 79px;
+					font-size: 12px;
+					border: 1px solid #d5d5d5;
+					padding: 0px 4px;
+					resize: none;
+					overflow: hidden;
+					vertical-align: top;
+					outline: none;
+				}
+				div {
+					height: 32px;
+					width: 221px;
+					line-height: 30px;
+					margin: 7px auto 0;
+					border: 1px solid #d5d5d5;
+					position: relative;
+					background-color: #fff;
+					span {
+						float: left;
+						width: 36px;
+						height: 30px;
+						padding: 6px 10px;
+					}
+					input {
+						border: none;
+						outline: none;
+						height: 28px;
+						padding: 0;
+					}
+				}
+				#tishi {
+					height: auto;
+					border: none;
+					color: red;
+					background: none;
+					font-size: 12px;
+					display: none;
+				}
+				#tishi2 {
+					height: auto;
+					border: none;
+					color: red;
+					font-size: 12px;
+					background: none;
+				}
+				#submits {
+					height: 35px;
+					width: 90px;
+					line-height: 35px;
+					text-align: center;
+					border-radius: 2px;
+					border: none;
+					outline: none;
+					font-size: 14px;
+					color: #fff;
+					cursor: pointer;
+					background-color: #00aef3;
+					margin: 12px auto 18px 10px;
+					cursor: pointer;
+				}
+			}
+			#return {
+				width: 240px;
+				height: auto;
+				display: none;
+				.medium {
+					width: 120px;
+					height: 167px;
+					margin: 74px auto;
+					text-align: center;
+					.medium_img {
+						width: 80px;
+						height: 72px;
+						margin: 0 auto;
+					}
+					.medium_p2 {
+						margin-top: -10px;
+						font-size: 12px;
+					}
+					#btns {
+						height: 30px;
+						width: 90px;
+						color: #fff;
+						margin: 18px auto 0;
+						background-color: #00aef3;
+						text-align: center;
+						line-height: 32px;
+						cursor: pointer;
+						outline: none;
+						border: 0;
+					}
+				}
+			}
+		}
+	}
+}
+// 右
+.region-end {
+	position: fixed;
+	bottom: 30%;
+	right: 0.1%;
+	z-index: 1111;
+	ul {
+		li {
+			position: relative;
+			width: 48px;
+			height: 48px;
+			background: #fff;
+			margin-top: 2px;
+			list-style: none;
+			a {
+				display: block;
+				width: 48px;
+				height: 48px;
+				border: 1px solid #0ba1e4;
+			}
+			.a1 {
+				background: url(../image/clan-slider.png) no-repeat;
+				background-position: 0 -92px;
+				&:hover {
+					background: #0ba1e4 url(../image/clan-slider.png) no-repeat;
+					background-position: -46px -92px;
+				}
+			}
+
+			.a2 {
+				background: url(../image/clan-slider.png) no-repeat;
+				background-position: 0 -138px;
+				&:hover {
+					background: #0ba1e4 url(../image/clan-slider.png) no-repeat;
+					background-position: -46px -138px;
+				}
+			}
+
+			.a3 {
+				background: url(../image/clan-slider.png) no-repeat;
+				background-position: 0 -182px;
+				&:hover {
+					background: #0ba1e4 url(../image/clan-slider.png) no-repeat;
+					background-position: -46px -182px;
+				}
+			}
+
+			.a4 {
+				background: url(../image/clan-slider.png) no-repeat;
+				background-position: 0 -230px;
+				&:hover {
+					background: #0ba1e4 url(../image/clan-slider.png) no-repeat;
+					background-position: -46px -230px;
+				}
+			}
+
+			.a5 {
+				background: url(../image/clan-slider.png) no-repeat;
+				background-position: 0 0px;
+				&:hover {
+					background: #0ba1e4 url(../image/clan-slider.png) no-repeat;
+					background-position: -46px 0px;
+				}
+			}
+			div {
+				position: absolute;
+				top: 0px;
+				right: 46px;
+				display: none;
+				height: 48px;
+				padding-left: 10px;
+				padding-right: 2px;
+				white-space: nowrap;
+				border: 1px solid #0ba1e4;
+				background-color: #0ba1e4;
+				text-align: center;
+				line-height: 48px;
+				font-size: 18px;
+				color: #fff;
+			}
+			.d4 {
+				display: none;
+				position: absolute;
+				border: 1px solid #0ba1e4;
+				padding: 1px;
+				top: -150px;
+				right: 52px;
+				width: 198px;
+				height: 198px;
+				img {
+					margin: -1px;
+					width: 196px;
+					height: 196px;
+				}
+			}
+			&:hover div {
+				display: block;
+			}
+		}
+		#gotops {
+			display: none;
+		}
+	}
+}
+#above {
+	position: fixed;
+	bottom: 56px;
+	right: 2px;
+	width: 48px;
+	z-index: 1111;
+	height: 48px;
+	border-radius: 50%;
+	background: #ffffff url(../image/clan-slider.png) no-repeat;
+	background-position: -92px 0;
+	display: none;
+}
+
+.popups {
+	position: fixed;
+	width: 400px;
+	display: none;
+	margin-left: -200px;
+	margin-top: -88px;
+	top: 50%;
+	left: 50%;
+	z-index: 11111;
+	.popup_img {
+		border-radius: 4px;
+		height: 175px;
+		.cha {
+			width: 18px;
+			height: 18px;
+			position: absolute;
+			right: 8px;
+			top: 8px;
+			left: auto;
+			bottom: auto;
+			cursor: pointer;
+		}
+		.popup_font {
+			position: absolute;
+			top: 44px;
+			left: 128px;
+			right: 26px;
+			font-size: 13px;
+			color: #fff;
+			p {
+				font-size: 17px;
+			}
+		}
+		.popup_btn {
+			position: absolute;
+			bottom: 12px;
+			right: 12px;
+			top: auto;
+			left: auto;
+			a {
+				text-decoration: none;
+			}
+			.btn_a {
+				display: inline-block;
+				width: 80px;
+				height: 32px;
+				line-height: 32px;
+				text-align: center;
+				border: 1px solid #fff;
+				border-radius: 5px;
+				cursor: pointer;
+				font-size: 13px;
+				color: #fff;
+			}
+			.btn_a1 {
+				display: inline-block;
+				width: 80px;
+				height: 32px;
+				line-height: 32px;
+				text-align: center;
+				border: 1px solid #fff;
+				border-radius: 5px;
+				cursor: pointer;
+				font-size: 13px;
+				color: #0085da;
+				margin-left: 8px;
+				background: #fff;
+			}
+		}
+	}
+}
